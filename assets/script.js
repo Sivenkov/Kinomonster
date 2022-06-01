@@ -52,3 +52,23 @@ window.addEventListener('scroll', () => {
 	slides.forEach(slide => slide.getElementsByTagName('img')[0].style.opacity = opacity);
 
 });
+
+
+// Mobile 
+
+const menu = document.querySelector('.mobile-button');
+const submenu = document.querySelector('.second-menu-mobile');
+let is_open = 0;
+
+menu.addEventListener('click', () => {
+	if (!is_open) {
+		submenu.style.display = 'block';
+		is_open = 1;
+	} else {
+		submenu.style.display = 'none';
+		is_open = 0;
+	}
+});
+
+
+
